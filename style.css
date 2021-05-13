@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+#wrapper {
+    width: 400px;
+    margin: 35px auto;
+}

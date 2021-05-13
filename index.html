@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <script lang="javascript" src="xlsx.full.min.js"></script>
+        <script lang="javascript" src="FileSaver.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <p>all fields required</p>
+            <form id="form" action="/">
+                <label for="fname">First name:</label><br />
+                <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    size="50"
+                    required
+                    autofocus
+                /><br />
+                <label for="lname">Last name:</label><br />
+                <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    size="50"
+                    required
+                /><br />
+                <label for="mail">Email adress:</label><br />
+                <input type="email" id="mail" name="mail" size="50" /><br />
+                <label for="link">Social media link:</label><br />
+                <input
+                    type="url"
+                    id="link"
+                    name="link"
+                    size="50"
+                    required
+                /><br />
+                <label for="intro">Introduce yourself:</label><br />
+                <textarea
+                    id="introduction"
+                    name="intro"
+                    rows="10"
+                    cols="52"
+                    required
+                ></textarea>
+                <br />
+                <label for="privacy"
+                    >Accept <a href="#">privacy policy</a>:</label
+                >
+                <input
+                    type="checkbox"
+                    id="privacy"
+                    name="privacy"
+                    value="privacy"
+                />
+                <br />
+                <button type="submit">Submit</button>
+            </form>
+            <div id="error"></div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
